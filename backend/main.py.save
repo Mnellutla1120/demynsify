@@ -1,0 +1,24 @@
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+class AnalyzeRequest(BaseModel):
+    text: str
+
+@app.post("/analyze")
+def analyze(req: AnalyzeRequest):
+    return {
+        "misinfo_score": 0.42,
+        "flagged_sentences": [
+            {
+                "sentence": "Vaccines cause infertility.",
+                "label": "Likely False",
+                "confidence": 0.91
+            }
+        ]
+    }
+
+
+^X
+
