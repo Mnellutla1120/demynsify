@@ -1,6 +1,8 @@
 # Deminsify
 
-A medical misinformation detection application similar to GPTZero. Upload files, paste URLs, or enter text to analyze medical content for accuracy and misinformation.
+A medical misinformation detection application similar to GPTZero. Upload files, paste URLs, or enter text to analyze medical content for accuracy and misinformation. This medical misinformation detector uses data from 1997 to 2022 from [this GitHub repository](https://github.com/kinit-sk/medical-misinformation-dataset). 
+
+
 
 ## Features
 
@@ -98,6 +100,7 @@ The app will open at `http://localhost:3000`
 - **Backend**: FastAPI, Python
 - **AI/ML**: OpenAI GPT-4o-mini (optional)
 - **File Processing**: PyPDF2, BeautifulSoup4
+  
 
 ## Notes
 
