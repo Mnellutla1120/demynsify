@@ -371,10 +371,19 @@ body {
 .score-label {
   font-size: 0.85rem;
   color: var(--text-tertiary);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.score-description {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  margin-bottom: 12px;
+  opacity: 0.7;
+  line-height: 1.4;
   transition: color 0.3s ease;
 }
 

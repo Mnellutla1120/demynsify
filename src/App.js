@@ -156,11 +156,11 @@ function App() {
   return (
     <div className="app-container">
       <button className="theme-toggle" onClick={toggleTheme} title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>
-        {theme === 'dark' ? '☀️' : '🌙'}
+        {theme === 'dark' ? '🌞' : '🌚'}
       </button>
       <header className="app-header">
-        <h1>Deminsify</h1>
-        <p className="tagline">Demistifying medical misinformation</p>
+        <h1>Demynsify</h1>
+        <p className="tagline">Demystifying medical misinformation</p>
         <p className="subtitle">
           <TypingAnimation text="Detect medical misinformation in text, URLs, or files." speed={50} />
         </p>
@@ -273,6 +273,7 @@ function App() {
             <div className="score-cards">
               <div className="score-card">
                 <div className="score-label">Misinformation Risk</div>
+                <div className="score-description">Probability that the content contains medical misinformation</div>
                 <div
                   className="score-value"
                   style={{ color: getScoreColor(result.misinfo_score) }}
@@ -292,6 +293,7 @@ function App() {
 
               <div className="score-card">
                 <div className="score-label">Accuracy Score</div>
+                <div className="score-description">How likely the medical information is accurate and reliable</div>
                 <div
                   className="score-value"
                   style={{ color: getScoreColor(1 - (result.accuracy_score || 0)) }}
@@ -362,7 +364,7 @@ function App() {
 
             <div className="reload-message">
               <p>
-                💡 <strong>Tip:</strong> Reload the page to check a different article, piece of text, or file.
+                 <strong>Tip:</strong> Reload the page to check a different article, piece of text, or file.
               </p>
               <button 
                 className="reload-button"
@@ -377,8 +379,8 @@ function App() {
         {!result && !loading && (
           <div className="info-message">
             <p>
-              💡 <strong>Tip:</strong> After analyzing content, reload the page to check a different article, piece of text, or file.
-            </p>
+              <strong>Tip:<br></br></strong> <TypingAnimation text= "After analyzing content, reload the page to check a different article, piece of text, or file."
+           speed={50} /> </p>
           </div>
         )}
       </div>
