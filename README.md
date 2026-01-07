@@ -105,3 +105,8 @@ The app will open at `http://localhost:3000`
 - For production use, configure an OpenAI API key for accurate analysis
 - File uploads are limited to PDF and text files
 - URL content extraction is limited to the first 10,000 characters
+
+
+## Potential Next Steps
+- Feed more training data
+- Continue training the model to discern misinformation from accuracy
