@@ -1,4 +1,4 @@
-# Deminsify
+# Demynsify
 
 A medical misinformation detection application similar to GPTZero. Upload files, paste URLs, or enter text to analyze medical content for accuracy and misinformation. This medical misinformation detector uses data from 1997 to 2022 from [this GitHub repository](https://github.com/kinit-sk/medical-misinformation-dataset). 
 
@@ -113,3 +113,7 @@ The app will open at `http://localhost:3000`
 ## Potential Next Steps
 - Feed more training data
 - Continue training the model to discern misinformation from accuracy
+
+  ## Access
+  Check out this vercel app! https://demynsify-367qub3fd-mnellutla1120s-projects.vercel.app/
+  
